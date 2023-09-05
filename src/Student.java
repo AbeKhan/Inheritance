@@ -47,7 +47,7 @@ public class Student
 
     public String getID()
     {
-        return "ID: " + ID;
+        return "ID:" + ID;
     }
 
     public String setID(String id)

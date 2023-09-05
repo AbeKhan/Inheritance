@@ -42,9 +42,21 @@ public class GradStudent extends Student
         return "Office has changed from " + holder + " to " + offices;
     }
 
+    public String getOfficeHours()
+    {
+        return "Office Hours:" + officeHours;
+    }
+
+    public String setOfficeHours(String hours)
+    {
+        String holder = officeHours;
+        this.officeHours = hours;
+        return "Office hours has changed from " + holder + " to " + officeHours;
+    }
+
     @Override
     public String toString()
     {
-        return super.toString() + " Office: " + offices + " Office Hours:" + officeHours;
+        return super.toString() + " Office:" + offices + " Office Hours:" + officeHours;
     }
 }
