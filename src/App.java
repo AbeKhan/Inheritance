@@ -4,7 +4,7 @@ public class App {
     public static void main(String[] args) throws Exception 
     {
         //Creating a list have holds Students
-        ArrayList<Student> list = new ArrayList<Student>();
+        ArrayList<Student> sList = new ArrayList<Student>();
 
         //Creating a defult student and a student with values
         Student student = new Student();
@@ -12,25 +12,32 @@ public class App {
 
         //Creating a defult GradStudent and a GradStudent with values
         GradStudent grad = new GradStudent();
-        GradStudent grad2 = new GradStudent("Abraham", "Khan", 3.0, "1048135", "AB", "9-6");
+        GradStudent grad2 = new GradStudent("Abe", "Kan", 3.0, "1048135", "AB", "9-6");
 
         System.out.println(student.setName("Pine", "Apple"));
         System.out.println(student.setGPA(3.14));
         System.out.println(student.setID("1234567"));
         System.out.println(grad.setOffice("DC"));
-        System.out.println(grad.setOfficeHours("9-5"));
-
-
-
-
-
-
+        System.out.println(grad.setOfficeHours("9-5")); 
+        System.out.println(student2);
 
         // Adding all the students into the list
-        list.add(student);
-        list.add(student2);
-        list.add(grad);
-        list.add(grad2);
+        sList.add(student);
+        sList.add(student2);
+        sList.add(grad);
+        sList.add(grad2);
+
+        //Looping through all of the students
+        for (Student stu : sList) 
+        {
+            System.out.println(stu);
+        }
+
+
+
+
+
+        
 
 
 

@@ -47,7 +47,7 @@ public class Student
 
     public String getID()
     {
-        return "ID:" + ID;
+        return "ID: " + ID;
     }
 
     public String setID(String id)
@@ -61,6 +61,7 @@ public class Student
     {
         return "Name: " + firstName + " " + lastName + " GPA:" + GPA + " ID:" + ID;
     }
+    //test
 }
 
 
