@@ -1,4 +1,6 @@
-public class GradStudent extends Student
+//import java.io.Serializable;
+
+public class GradStudent extends Student //implements Serializable
 {
     String offices;
     String officeHours;
@@ -21,6 +23,12 @@ public class GradStudent extends Student
         this.offices = offices;
         this.officeHours = officeHours;
     } 
+
+    public String getDegree()
+    {
+        return "graduate degree";
+    }
+
     @Override
     public String setID(String id)
     {

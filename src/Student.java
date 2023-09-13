@@ -1,4 +1,6 @@
-public class Student 
+import java.io.Serializable;
+
+public abstract class Student implements Serializable
 {
     String firstName;
     String lastName;
@@ -19,6 +21,13 @@ public class Student
          lastName = LN;
          this.GPA = GPA;
          this.ID = ID;
+    }
+
+    public abstract String getDegree();
+
+    public String getSerialData()
+    {
+        return firstName + ", " + lastName + ", " + GPA; 
     }
 
     public String getName()
